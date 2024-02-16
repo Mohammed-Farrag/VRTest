@@ -5,14 +5,14 @@ export class SimilarProducts extends Component {
     state = {
         products: [
             {
-                thumbnail: 'src/images/similar.png',
+                thumbnail: './src/images/similar.png',
                 title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
                 price: {
                     old: 2500,
                     new: 3000
                 },
                 discount: 50,
-                trademark: 'src/images/adidas.png',
+                trademark: './src/images/adidas.png',
                 rating: 4.6,
                 pickFrom: 'Genena Mall',
                 from:'UK',
@@ -20,14 +20,14 @@ export class SimilarProducts extends Component {
                 in:10
             },
             {
-                thumbnail: 'src/images/similar.png',
+                thumbnail: './src/images/similar.png',
                 title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
                 price: {
                     old: 2500,
                     new: 3000
                 },
                 discount: 50,
-                trademark: 'src/images/adidas.png',
+                trademark: './src/images/adidas.png',
                 rating: 4.6,
                 pickFrom: 'Genena Mall',
                 from:'UK',
@@ -35,14 +35,14 @@ export class SimilarProducts extends Component {
                 in:10
             },
             {
-                thumbnail: 'src/images/similar.png',
+                thumbnail: './src/images/similar.png',
                 title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
                 price: {
                     old: 2500,
                     new: 3000
                 },
                 discount: 50,
-                trademark: 'src/images/adidas.png',
+                trademark: './src/images/adidas.png',
                 rating: 4.6,
                 pickFrom: 'Genena Mall',
                 from:'UK',
@@ -50,14 +50,14 @@ export class SimilarProducts extends Component {
                 in:10
             },
             {
-                thumbnail: 'src/images/similar.png',
+                thumbnail: './src/images/similar.png',
                 title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
                 price: {
                     old: 2500,
                     new: 3000
                 },
                 discount: 50,
-                trademark: 'src/images/adidas.png',
+                trademark: './src/images/adidas.png',
                 rating: 2.6,
                 pickFrom: 'Genena Mall',
                 from:'UK',
