@@ -14,9 +14,9 @@ export class SingleProduct extends Component {
         category: 'men',
         description: "Lorem ipsum, dolor sit amet  consectetur adipisicing elit Corrupti nesciunt commodi dolores voluptatem. Quibusdam necessitatibus assumenda animi reiciendis atque quod",
         imgs: [
-            'src/images/p1.jpg',
-            'src/images/p2.jpg',
-            'src/images/p3.jpg'
+            'staticImages/p1.jpg',
+            'staticImages/p2.jpg',
+            'staticImages/p3.jpg'
         ],
         activeImg: 0,
         rating: 4.9,
@@ -65,7 +65,10 @@ export class SingleProduct extends Component {
                 <BreadCrumb />
                 <div className="flex justify-between flex-col md:flex-row">
                     <div className="produnct-images left">
-                        <img className='w-full aspect-square rounded-md border border-zinc-400 mb-2' src={this.state.imgs[this.state.activeImg]} alt="" />
+                        <img 
+                            className='w-full aspect-square rounded-md border border-zinc-400 mb-2' 
+                            src={this.state.imgs[this.state.activeImg]} 
+                            alt="" />
                         <ul className='w-full p-0 flex justify-between items-center'>
                             <li className='cursor-pointer'><BsChevronLeft onClick={() => this.Prev()} /></li>
 
