@@ -6,7 +6,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 export class App extends Component {
   state = {
-    open: true
+    open: false
   }
   handleClose = () => {
     this.setState((state) => ({ ...state, open: false }))

@@ -8,7 +8,7 @@ export class MainMenu extends Component {
                     <img className='w-5' src="images/Navbar/search.svg" alt="" />
                     Search
                 </div>
-                <div className="middle ms-14">
+                <div className="middle hidden md:flex ms-14">
                     <img src="images/Navbar/adidas.svg" alt="" />
                 </div>
                 <div className="right ">

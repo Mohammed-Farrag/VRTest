@@ -63,7 +63,7 @@ export class SingleProduct extends Component {
         return (
             <div className='single-product container font-mont'>
                 <BreadCrumb />
-                <div className="flex justify-between">
+                <div className="flex justify-between flex-col md:flex-row">
                     <div className="produnct-images left">
                         <img className='w-full aspect-square rounded-md border border-zinc-400 mb-2' src={this.state.imgs[this.state.activeImg]} alt="" />
                         <ul className='w-full p-0 flex justify-between items-center'>
@@ -91,11 +91,11 @@ export class SingleProduct extends Component {
 
                         <Rating rating={this.state.rating} rates={this.state.rates} />
 
-                        <div className="price text-purple-700 text-2xl border-b pb-4 font-bold mt-4">
+                        <div className="flex flex-wrap price text-purple-700 text-2xl border-b pb-4 font-bold mt-4">
                             {this.state.price.new.toLocaleString()}
                             <span className='text-thin'>LE</span>
                             <del className='text-zinc-500 mx-2'>{this.state.price.old.toLocaleString()} LE</del>
-                            <span className='bg-[#FFF200] mx-10 py-2 px-4 rounded-md text-base text-black'>{this.state.discount} % off</span>
+                            <span className='bg-[#FFF200] mx-0 sm:mx-10 py-2 px-4 rounded-md text-base text-black'>{this.state.discount + ' % off'} </span>
                         </div>
 
 
@@ -126,8 +126,8 @@ export class SingleProduct extends Component {
 
 
                         <div className="flex gap-2 font-semibold py-3">
-                            <button className='p-3 py-2 rounded-full bg-default text-black text-center'>Add To Cart</button>
-                            <button className='p-3 py-2 rounded-full bg-purple-700 text-white text-center'>Pick up from Store</button>
+                            <button className='p-3 py-2 text-sm  min-w-40 rounded-full bg-default text-black text-center'>Add To Cart</button>
+                            <button className='p-3 py-2 text-sm  min-w-40 rounded-full bg-purple-700 text-white text-center'>Pick up from Store</button>
                         </div>
                     </div>
 

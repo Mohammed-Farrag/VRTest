@@ -16,7 +16,7 @@ export class TopNabvar extends Component {
                         <img src='images/brand_logo_black.svg' />
                     </div>
 
-                    <div className="middle flex gap-2 justify-between items-center ms-auto">
+                    <div className="middle hidden md:flex gap-2 justify-between items-center ms-auto">
                             <GoChevronLeft />
                             <p className='m-0'>
                                 Valentine Day Offer! Buy Tow Get One Free <a href='#' className='font-bold text-black' >Shop Now</a>
@@ -25,7 +25,7 @@ export class TopNabvar extends Component {
                     </div>
                     
                     <div className="right ms-auto">
-                            <ul className='flex gap-6 font-bold m-0'>
+                            <ul className='flex gap-6 font-bold m-0 flex-col sm:flex-row'>
                                 <li className='flex gap-2 cursor-pointer'>
                                     <img className='w-4' src="images/Navbar/phone.svg" alt="" />
                                     Contact Us

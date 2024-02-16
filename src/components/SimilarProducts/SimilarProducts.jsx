@@ -71,12 +71,12 @@ export class SimilarProducts extends Component {
       <div className='w-full'
       >
         <h2 className='text-purple-500'>SimilarProducts</h2>
-        <div className="text-sm text-zinc-300" >You may like these products also</div>
+        <div className="text-sm text-zinc-500" >You may like these products also</div>
 
 
-        <div className="flex mt-3 gap-4">
+        <div className="flex mt-3 flex-col sm:flex-row gap-4">
             {this.state.products.map((prod, index) => (
-                <div className="p-1 flex flex-col gap-1 shadow-sm shadow-slate-400"  key={index}>
+                <div className="p-1 flex flex-col gap-1 shadow-sm px-5 sm:px-0 shadow-slate-400"  key={index}>
                     <img src={prod.thumbnail} className='rounded-lg' alt="" />
                     <p className="font-bold w-full text-start">{prod.title}</p>
                     <span className='text-purple-800 text-2xl font-bold'>{prod.price.new} <em className='font-normal'>LE</em> </span>
